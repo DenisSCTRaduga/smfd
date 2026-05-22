@@ -74,3 +74,30 @@ const user = {
 - `instance.date.any(from, to);` // random date between range
 - `instance.date.recent();` // last 30 days
 - `instance.date.recent(7);` // last 7 days
+
+### Arrays
+```typescript
+const users = instance.repeat(10, () => ({
+  id: instance.id.uuid(),
+  name: instance.person.firstName(),
+}));
+```
+
+### Async / Mock API
+```typescript
+const users = await instance.asyncItems(10, () => ({
+  id: instance.id.uuid(),
+}));
+```
+
+### Simulate API
+```typescript
+const data = await instance.fetch(() => ({
+  users: instance.repeat(5, () => ({
+    id: instance.id.uuid(),
+  })),
+}), {
+  delay: 1000,
+  errorRate: 0.1,
+});
+```
