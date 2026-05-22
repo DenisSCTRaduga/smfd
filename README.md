@@ -9,7 +9,7 @@ Small Fake Data — lightweight fake data generator for testing and prototyping.
 ## 📦 Installation
 
 ```bash
-npm install smfd 
+npm install @solanin/smfd -D
 ```
 
 ---
@@ -17,7 +17,7 @@ npm install smfd
 ## Usage
 
 ```typescript
-import { createSmFD } from "@solanin/smfd";
+import { createSmFD } from "@so1anin/smfd";
 
 const instance = createSmFD();
 

@@ -1,6 +1,6 @@
 {
-  "name": "@solanin/smfd",
-  "version": "0.1.0",
+  "name": "@so1anin/smfd",
+  "version": "0.1.1",
   "description": "",
   "type": "module",
   "main": "./dist/index.cjs",
