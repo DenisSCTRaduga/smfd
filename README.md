@@ -17,7 +17,7 @@ npm install smfd
 ## Usage
 
 ```typescript
-import { createSmFD } from "smfd";
+import { createSmFD } from "@solanin/smfd";
 
 const instance = createSmFD();
 
